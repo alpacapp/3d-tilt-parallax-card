@@ -1,0 +1,12 @@
+{% if link %}
+<a href="{{ link }}" class="wrapper" {% if hoverOnly %}data-hoverOnly{% endif %}>
+{% else %}
+<div class="wrapper" {% if hoverOnly %}data-hoverOnly{% endif %}>
+{% endif %}
+  <img {{ image | image_srcset: 1.0 }} alt="{{ image.alt }}" alpacapp-element="image{{ style }}" />
+  <div class="caption" alpacapp-element="caption{{ style }}" alpacapp-editable="caption" alpacapp-richText>{{ caption | richText }}</div>
+{% if link %}
+</a>
+{% else %}
+</div>
+{% endif %}

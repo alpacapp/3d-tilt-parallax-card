@@ -1,0 +1,238 @@
+{
+    "resizable"		: true,
+	"elements"		: [
+		{
+			"name"					: "Image (Style #1)",
+			"handle"				: "image1",
+			"hoverCustomizations"	: true,
+			"customizations"		: "image"
+		},
+        {
+              "name"				: "Image (Style #2)",
+              "handle"				: "image2",
+              "hoverCustomizations"	: true,
+              "customizations"		: "image",
+              "defaults"	: {
+  				"border-radius"	: 15,
+              }
+        },
+        {
+              "name"				: "Image (Style #3)",
+              "handle"				: "image3",
+              "hoverCustomizations"	: true,
+              "customizations"		: "image"
+        },
+        {
+              "name"				: "Image (Style #4)",
+              "handle"				: "image4",
+              "hoverCustomizations"	: true,
+              "customizations"		: "image"
+        },
+		{
+			"name"				: "Caption (Style #1)",
+			"handle"			: "caption1",
+			"hoverCustomizations"	: true,
+			"customizations"	: "all",
+			"defaults"	: {
+				"color"				: "#FFFFFF",
+				"background-color"	: "#0000001a",
+				"font-size"			: 1.1,
+                "padding"			: 10,
+                "margin"			: 15,
+                "border-radius"		: 15,
+                "backdrop-filter"	: {"blur":6},
+			}
+		},
+        {
+			"name"				: "Caption (Style #2)",
+			"handle"			: "caption2",
+			"hoverCustomizations"	: true,
+			"customizations"	: "all"
+		},
+        {
+			"name"				: "Caption (Style #3)",
+			"handle"			: "caption3",
+			"hoverCustomizations"	: true,
+			"customizations"	: "all",
+		},
+        {
+			"name"				: "Caption (Style #4)",
+			"handle"			: "caption4",
+			"hoverCustomizations"	: true,
+			"customizations"	: "all",
+		},
+	],
+	"properties"	: [
+		{
+			"name"			: "Image",
+			"variable"		: "image",
+			"type"			: "image",
+            "default"		: "https://images.unsplash.com/photo-1498866363999-1afe374cb87f?ixid=M3wzOTQxNjF8MHwxfHNlYXJjaHwyNXx8d2F0ZXJmYWxsJTIwaWNlbGFuZHxlbnwwfHx8fDE2OTgxNjcxNzl8MA&ixlib=rb-4.0.3&q=80&w=1200"
+		},
+		{
+			"name"			: "Caption",
+			"variable"		: "caption",
+			"type"			: "richText",
+			"default"		: ""
+		},
+		{
+			"name"			: "Link (optional)",
+			"variable"		: "link",
+			"type"			: "url",
+			"default"		: ""
+		},
+		{
+			"name"			: "Initiate effect only during mouse hover",
+			"variable"		: "hoverOnly",
+			"type"			: "checkbox",
+			"default"		: false
+		},
+		{
+			"name"			: "Zoom-in during hover",
+			"variable"		: "zoomIn",
+			"type"			: "slider",
+            "cssVariable"	: true,
+			"default"		: 5,
+            "min"			: 0,
+            "max"			: 50,
+			"integer"		: true,
+            "unit"			: "%",
+		},
+		{
+			"name"			: "Perspective Amount",
+			"variable"		: "perspective",
+			"type"			: "slider",
+            "cssVariable"	: true,
+			"default"		: 4,
+            "min"			: 1,
+            "max"			: 10,
+            "integer"		: true
+		},
+		{
+			"name"			: "Tilt Amount",
+			"variable"		: "tilt",
+			"type"			: "slider",
+            "cssVariable"	: true,
+			"default"		: 3,
+            "min"			: 1,
+            "max"			: 6
+		},
+        {
+			"name"			: "Horizontal Tilt Direction",
+			"variable"		: "tiltX",
+			"type"			: "dropdown",
+			"default"		: "normal",
+			"options"		: [
+				{
+					"name"	: "Normal",
+					"value"	: "normal"
+				},
+				{
+					"name"	: "None",
+					"value"	: "none"
+				},
+				{
+					"name"	: "Reverse",
+					"value"	: "reverse"
+				}
+			]
+		},
+        {
+			"name"			: "Vertical Tilt Direction",
+			"variable"		: "tiltY",
+			"type"			: "dropdown",
+			"default"		: "normal",
+			"options"		: [
+				{
+					"name"	: "Normal",
+					"value"	: "normal"
+				},
+				{
+					"name"	: "None",
+					"value"	: "none"
+				},
+				{
+					"name"	: "Reverse",
+					"value"	: "reverse"
+				}
+			]
+		},
+		{
+			"name"			: "Caption Z-Distance",
+			"variable"		: "captionZDistance",
+			"type"			: "slider",
+            "cssVariable"	: true,
+            "unit"			: "px",
+			"default"		: 30,
+            "min"			: 0,
+            "max"			: 200,
+            "integer"		: true
+		},
+        {
+			"name"			: "Caption Vertical Alignment",
+			"variable"		: "verticalAlignment",
+			"type"			: "dropdown",
+            "cssVariable"	: true,
+			"default"		: "end",
+			"options"		: [
+				{
+					"name"	: "Top",
+					"value"	: "start"
+				},
+				{
+					"name"	: "Center",
+					"value"	: "center"
+				},
+				{
+					"name"	: "Bottom",
+					"value"	: "end"
+				}
+			]
+		},
+        {
+			"name"			: "Caption Horizontal Alignment",
+			"variable"		: "horizontalAlignment",
+			"type"			: "dropdown",
+            "cssVariable"	: true,
+			"default"		: "center",
+			"options"		: [
+				{
+					"name"	: "Left",
+					"value"	: "left"
+				},
+				{
+					"name"	: "Center",
+					"value"	: "center"
+				},
+				{
+					"name"	: "Right",
+					"value"	: "right"
+				}
+			]
+		},
+        {
+			"name"			: "Caption Style",
+			"variable"		: "style",
+			"type"			: "dropdown",
+			"default"		: "1",
+			"options"		: [
+				{
+					"name"	: "Style #1",
+					"value"	: "1"
+				},
+				{
+					"name"	: "Style #2",
+					"value"	: "2"
+				},
+				{
+					"name"	: "Style #3",
+					"value"	: "3"
+				},
+				{
+					"name"	: "Style #4",
+					"value"	: "4"
+				}
+			]
+		},
+	]
+}

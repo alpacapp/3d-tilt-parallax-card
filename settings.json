@@ -1,0 +1,11 @@
+{
+    "name": "3D Tilt Parallax Card",
+    "handle": "3d-tilt-parallax-card",
+    "author": "yassine-bouanane",
+    "category": "media",
+    "description": "3D Tilt Parallax Card Effect. Rotates a card in 3D following mouse movement.",
+    "entry": "block.liquid",
+    "stylesheet": "style.css",
+    "script": "script.js",
+    "icon": "3d_rotation"
+}
